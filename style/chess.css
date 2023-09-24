@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap');
+
+
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.15rem;
+}
+
+#newgame {
+  background-color: #2196F3;
+  box-shadow: 0px 0px 5px #2196F3;
+}
+
+#resetScore {
+  background-color: #9c2744;
+  box-shadow: 0px 0px 5px #9c2744;
+}
+
+.btn-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main-wrap {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.game-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coordinate,
+.timer {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 50px;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  margin-bottom: 22px;
+}
+
+.chessboard div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.white {
+  background-color: #f0d9b5;
+}
+
+.black {
+  background-color: #b58863;
+}
+
+.label {
+  font-size: 1.25rem;
+  cursor: none;
+}
+
+
+.clicked_right {
+  background-color: green;
+}
+
+.clicked_wrong {
+  background-color: #9c2744;
+}
+
+
+/* toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  padding-top: 4px;
+  padding-left: 5px;
+  color: #fff
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 34px;
+  width: 30px;
+  left: -2px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(34px);
+}
+
+#status {
+  margin: 0;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/*  */
+.manage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  width: 300px;
+  gap: 10px;
+  align-items: center;
+}
+
+.toggle-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.score-text {
+  margin: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  body {
+    justify-content: flex-start;
+  }
+
+  .main-wrap {
+    flex-direction: column;
+  }
+}

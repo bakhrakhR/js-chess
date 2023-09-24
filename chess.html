@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/chess.css">
+</head>
+
+<body>
+
+  <div class="main-wrap">
+    <div class="game-wrap">
+      <h1 class="text">let's learn chess coordinates </h1>
+      <div class="chessboard" id="chessboard"></div>
+      <div class="manage">
+        <div class="toggle-box">
+          <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider">pro</span>
+          </label>
+          <p id="status">study mode</p>
+        </div>
+        <div class="score-box">
+          <span class="score" id="currentScore">33</span>
+          <p class="score-text">score</p>
+          <span class="score" id="bestScore"></span>
+          <p class="score-text">best</p>
+        </div>
+        <div class="btn-wrap">
+          <button id="newgame">new</button>
+          <button id="resetScore">reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="coordinate"></div>
+      <div class="timer">30</div>
+    </div>
+
+  </div>
+
+
+
+  <script src="./script/chess.js"></script>
+</body>
+
+</html>

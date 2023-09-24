@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Architects Daughter', 'Assistant', sans-serif;
+}
+
+/* header part */
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-wrap {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100vw;
+    padding-left: 25%;
+}
+
+.user {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    gap: 1.5rem;
+    width: fit-content;
+}
+
+.profile_photo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
+    font-weight: normal;
+    align-self: center;
+}
+
+/* main part */
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    background-color: #96e6ecb2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.main-text {
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text-description {
+    width: 50%;
+    line-height: 1.5;
+}
+
+.links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0 30px 0;
+}
+
+.links a {
+    background-color: #21a5ac;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: scale 0.15s;
+    text-decoration: none;
+    color: white
+}
+
+.stack_wrap {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.stacks img {
+    width: 75px;
+}
+
+.landing-wrap {
+    background-color: #96e6ec36;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px 80px;
+}
+
+.lp-img {
+    width: 350px;
+    min-width: 50vw;
+    box-shadow: 0 0 4px 0px #dd9f9f;
+}
+
+.footer-wrap {
+    height: 30px;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: #21a5ac;
+    padding-left: 10px;
+    padding-right: 10px;
+}
